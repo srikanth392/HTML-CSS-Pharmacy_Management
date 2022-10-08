@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DashBoard</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;1,200;1,300;1,400&family=Noto+Sans:ital,wght@0,300;1,100&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Fira Sans', sans-serif;
+            /* font-family: 'Noto Sans', sans-serif; */
+        }
+
+        .clsPharmacyLogo {
+            width: auto;
+            height: 50px;
+            margin-left: 4%;
+        }
+
+        .clsGearIcon {
+            width: auto;
+            height: 13px;
+
+        }
+
+        .clsImgArrow {
+            width: auto;
+            height: 15px;
+            margin-bottom: -2px;
+
+        }
+
+        .clsImgSrikanth {
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+
+        }
+
+        .clsHeaderTable {
+            height: 20px;
+            width: 100%;
+
+        }
+
+        .clsSearch {
+            width: 352px;
+            padding-top: 9px;
+            padding-bottom: 10px;
+            border-color: lightblue;
+
+
+        }
+
+        .clsBtnGo {
+            height: 40px;
+            width: 63px;
+            background-color: #0CA0E3;
+            border-color: #0CA0E3;
+            color: white;
+
+        }
+
+        .clsImageTime {
+            height: 15px;
+            width: auto;
+            margin-bottom: -2px;
+        }
+
+
+
+        /* Table1 */
+        .clstable1 {
+            width: 100%;
+            border: 1px solid #9ea095;
+            border-collapse: collapse;
+            padding: 10px;
+            color: #6a6e53;
+            vertical-align: top;
+
+        }
+
+        .clstable1 th {
+            border: 1px solid #9ea095;
+            border-collapse: collapse;
+            padding: 6px;
+            font-size: 15px;
+            text-align: left;
+        }
+
+        .clstable1 tbody td {
+            border: 1px solid #9ea095;
+            border-collapse: collapse;
+            padding: 10px;
+            color: #6a6e53;
+        }
+
+        .clstable1 tbody tr:nth-child(even) {
+            background-color: rgb(247, 247, 247);
+
+        }
+
+        .clstable1 tbody td:nth-child(1) {
+            color: #B5C9D4;
+        }
+
+        .clsSpanText {
+
+            font-size: 20px;
+            font-weight: bold;
+            color: #323427;
+
+        }
+
+        .clsSpanAWT {
+            color: 323427;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .clsSpanTime {
+            color: #d11818;
+            font-weight: bold;
+            font-size: 20px;
+            margin-bottom: F20px;
+
+        }
+
+        .clsBtnCallTicket {
+            height: 30px;
+            width: 100px;
+            background-color: #49AF18;
+            color: white;
+            border-color: #49AF18;
+            border-width: 0px;
+
+        }
+
+        .clsBtnCallParkedTicket {
+            height: 30px;
+            width: 125px;
+            background-color: #D9554C;
+            color: white;
+            border-color: #D9554C;
+            border-width: 0px;
+
+        }
+
+        .clsBtnColor {
+            color: white;
+            background-color: #E9A642;
+            border-color: #E9A642;
+            border-radius: 5px;
+            border-width: 0px;
+        }
+
+        .clstdCallTicket {
+
+            text-align: right;
+        }
+
+        .clsTb1DivAWT {
+            display: flex;
+            margin-top: 25px;
+        }
+
+        .clstdAWT {
+
+            text-align: center;
+
+        }
+
+        .clsInnerTable1 {
+            margin-left: 1%;
+
+            width: 99%;
+        }
+
+        .clsInnerTable2 {
+           
+
+            width: 100%;
+        }
+
+        .clsInnerTabletd1 {
+            width: 50%;
+            vertical-align: top !important;
+        }
+
+        .clsInnerTabletd2 {
+            width: 25%;
+            vertical-align: top;
+        }
+
+        .clsHeaderTabletd1 {
+            width: 19%;
+        }
+
+        .clsHeaderTabletd2 {
+            width: 44%;
+        }
+
+        .clsHeaderTabletd3 {
+            width: 11%;
+        }
+        .clsName{
+            padding-top: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <tbody>
+            <tr>
+                <td colspan="6">
+                    <table class="clsHeaderTable">
+                        <tbody>
+                            <tr>
+                                <td class="clsHeaderTabletd1"> <img src="../images/pharmacy-logo.PNG"
+                                        class="clsPharmacyLogo" /></td>
+                                <td colspan="2" class="clsHeaderTabletd2"><input type="text" class="clsSearch"
+                                        placeholder="Search Ticket..." /><input type="button" class="clsBtnGo"
+                                        value="GO" /></td>
+                                <td class="clsHeaderTabletd3"><img src="../images/gear-xxl.png"
+                                        class="clsGearIcon" />&nbsp; Config
+                                    Settings </td>
+                                <td class="clsHeaderTabletd3"><img src="../images/arrow-xxl.png"
+                                        class="clsImgArrow" />&nbsp; DashBoard</td>
+                                <td class="clsHeaderTabletd3"> <img
+                                        src="../images/WhatsApp Image 2022-08-18 at 10.23.37 PM.jpeg"
+                                        class="clsImgSrikanth" />&nbsp; Srikanth </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="6" style="background-color: #F5F6FA;">&nbsp;</td>
+            </tr>
+            <tr>
+
+
+                <td class="clsInnerTabletd1">
+
+                    <!-- table1 -->
+
+                    <table class="clsInnerTable1">
+                        <tbody>
+                            <tr>
+                                <td><span class="clsSpanText">Not Served Tickets</span></td>
+                                <td class="clstdAWT"><span class="clsSpanAWT">Average Waiting Time</span>(Per Person)
+                                    <span class="clsSpanTime">15:02</span>
+                                </td>
+
+                            </tr>
+
+                            <tr>
+                                <td><span><img src="..//images/Timelogo.png" class="clsImageTime" /> </span>Today</td>
+                                <td class="clstdCallTicket"><input type="button" value="Call Ticket"
+                                        class="clsBtnCallTicket" />
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td colspan="2">&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <table class="clstable1">
+                                        <tbody>
+                                            <tr>
+                                                <th>Ticket Number</th>
+                                                <th>Patient Name</th>
+                                                <th>MRN No</th>
+                                                <th>Date & Time</th>
+                                                <th>Status</th>
+                                            </tr>
+                                            <tr>
+                                                <td>763648</td>
+                                                <td> Steve</td>
+                                                <td>578967</td>
+                                                <td>Jan 17,2019</td>
+                                                <td><input type="button" value="Waiting" class="clsBtnColor" /></td>
+
+                                            </tr>
+                                            <tr>
+                                                <td>763651</td>
+                                                <td>Roger</td>
+                                                <td>578966</td>
+                                                <td>Jan 17,2019</td>
+                                                <td><input type="button" value="Waiting For Approver"
+                                                        class="clsBtnColor" /></td>
+
+                                            </tr>
+                                            <tr>
+                                                <td>763649</td>
+                                                <td>Amber</td>
+                                                <td>578965</td>
+                                                <td>Jan 17,2019</td>
+                                                <td><input type="button" value="Waiting" class="clsBtnColor" /></td>
+
+                                            </tr>
+
+                                            <tr>
+                                                <td>763650</td>
+                                                <td>Azad</td>
+                                                <td>578968</td>
+                                                <td>Jan 17,2019</td>
+                                                <td><input type="button" value="Not Turned Up" class="clsBtnColor" />
+                                                </td>
+
+                                            </tr>
+                                            <tr>
+                                                <td>763652</td>
+                                                <td>Smith</td>
+                                                <td>578957</td>
+                                                <td>Jan 17,2019</td>
+                                                <td><input type="button" value="Preparing Medication"
+                                                        class="clsBtnColor" /></td>
+
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+
+                                </td>
+
+
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <!--  end table1 -->
+
+                </td>
+                <td class="clsInnerTabletd2">
+                    <!-- table2 -->
+
+                    <table class="clsInnerTable2">
+                        <tbody>
+                            <tr>
+                                <td colspan="2" class="clsSpanText">Called and Ready to Dispense</td>
+                            </tr>
+                            <tr>
+                                <td><span> <img src="..//images/Timelogo.png" class="clsImageTime" /></span> Today</td>
+                                <td class="clstdCallTicket"><input type="button" value="Call Ticket"
+                                        class="clsBtnCallTicket" />
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <table class="clstable1">
+                                        <tbody>
+                                            <tr>
+                                                <th>Ticket No.</th>
+                                                <th>Patient Name</th>
+                                                <th>Date & Time</th>
+                                                <th>Status</th>
+                                            </tr>
+                                            <tr>
+                                                <td>763648</td>
+                                                <td>Steve</td>
+                                                <td>Jan 17,2019</td>
+                                                <td>Ready to Dispense</td>
+
+                                            </tr>
+                                            <tr>
+                                                <td>763651</td>
+                                                <td>Roger</td>
+                                                <td>Jan 17,2019</td>
+                                                <td>Ready to Dispense </td>
+
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <!--  end table2 -->
+                </td>
+                <td class="clsInnerTabletd2">
+                    <!--  table3 -->
+                    <table class="clsInnerTable2">
+                        <tbody>
+
+                            <tr>
+                                <td colspan="2">
+                                    <label class="clsSpanText">Parked Tickets</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td> <span> <img src="..//images/Timelogo.png" class="clsImageTime" /> Today</td>
+                                <td class="clstdCallTicket"> <input type="button" value="Call Parked Ticket"
+                                        class="clsBtnCallParkedTicket" /> </td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <table class="clstable1">
+                                        <tbody>
+                                            <tr>
+                                                <th>Ticket No.</th>
+                                                <th>Patient Name</th>
+                                                <th>Date & Time</th>
+                                                <th>Status</th>
+                                            </tr>
+                                            <tr>
+                                                <td>763648</td>
+                                                <td>Steve</td>
+                                                <td>Jan 17,2019</td>
+                                                <td>Not Turned Up</td>
+
+                                            </tr>
+                                            <tr>
+                                                <td>763651</td>
+                                                <td>Roger</td>
+                                                <td>Jan 17,2019</td>
+                                                <td>Waiting For Approver</td>
+
+                                            </tr>
+                                            <tr>
+                                                <td>763650</td>
+                                                <td>Michael</td>
+                                                <td>Jan 17,2019</td>
+                                                <td>Preparing Medication</td>
+
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                    <!--  end table3 -->
+                </td>
+
+            </tr>
+
+            </tr>
+
+        </tbody>
+    </table>
+
+</body>
+
+</html>
